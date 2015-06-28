@@ -17,6 +17,11 @@
 # inherit from common sprout repo
 -include device/google/sprout-common/BoardConfigCommon.mk
 
+# Optimizations
+ROM_OPTIS := true
+BOARD_GLOBAL_CFLAGS := -mvectorize-with-neon-quad --param l1-cache-size=16 --param l1-cache-line-size=32 --param l2-cache-size=1024
+BOARD_GLOBAL_CPPFLAGS := -mvectorize-with-neon-quad --param l1-cache-size=16 --param l1-cache-line-size=32 --param l2-cache-size=1024
+
 TARGET_OTA_ASSERT_DEVICE := sprout,sprout4
 
 TARGET_RECOVERY_FSTAB := device/google/sprout4/rootdir/root/fstab.sprout
