@@ -16,9 +16,7 @@
 
 # inherit from common sprout repo
 -include device/google/sprout-common/BoardConfigCommon.mk
-
-KERNEL_TOOLCHAIN := ~/radium/prebuilts/gcc/linux-x86/arm/arm-eabi-6.0/bin #maintainer, please change the radium directory to wherever ur rom source is!
-
+KERNEL_TOOLCHAIN := $ANDROID_BUILD_TOP/prebuilts/gcc/linux-x86/arm/arm-eabi-6.0/bin 
 # Optimizations
 ROM_OPTIS := true
 BOARD_GLOBAL_CFLAGS := -mvectorize-with-neon-quad --param l1-cache-size=16 --param l1-cache-line-size=32 --param l2-cache-size=1024
