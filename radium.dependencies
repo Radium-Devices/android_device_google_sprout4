@@ -7,10 +7,10 @@
     "revision": "cm-12.1"
   },
   {
-    "repository": "CyanogenMod/android_kernel_mediatek_sprout",
+    "repository": "Radium-Devices/Radium_sprout",
     "target_path": "kernel/mediatek/sprout",
     "remote": "github",
-    "revision": "cm-12.1"
+    "revision": "5.1"
   },
   {
     "repository": "TheMuppets/proprietary_vendor_google",
