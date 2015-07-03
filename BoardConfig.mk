@@ -17,7 +17,7 @@
 # inherit from common sprout repo
 -include device/google/sprout-common/BoardConfigCommon.mk
 
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-6.0/bin 
+#KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-6.0/bin 
 
 # Optimizations
 ROM_OPTIS := true
