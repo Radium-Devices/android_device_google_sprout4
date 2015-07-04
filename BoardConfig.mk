@@ -17,7 +17,12 @@
 # inherit from common sprout repo
 -include device/google/sprout-common/BoardConfigCommon.mk
 
-#KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-6.0/bin 
+ifneq ($(AZURE),true)
+    KERNEL_TOOLCHAIN := /home/akhil/radium/prebuilts/gcc/linux-x86/arm/arm-eabi-6.0/bin
+else
+    KERNEL_TOOLCHAIN := /home/akhilnarang/rom/radium/prebuilts/gcc/linux-x86/arm/arm-eabi-6.0/bin
+endif
+
 
 # Optimizations
 ROM_OPTIS := true
