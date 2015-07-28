@@ -17,10 +17,10 @@
 # inherit from common sprout repo
 -include device/google/sprout-common/BoardConfigCommon.mk
 
-ifneq ($(AZURE),true)
-    KERNEL_TOOLCHAIN := /home/akhil/radium/prebuilts/gcc/linux-x86/arm/arm-eabi-6.0/bin
+ifeq ($(RADIUMBOT),true)
+    KERNEL_TOOLCHAIN := /root/radium/prebuilts/gcc/linux-x86/arm/arm-eabi-6.0/bin
 else
-    KERNEL_TOOLCHAIN := /home/akhilnarang/rom/radium/prebuilts/gcc/linux-x86/arm/arm-eabi-6.0/bin
+    KERNEL_TOOLCHAIN := /home/akhilnarang/radium/prebuilts/gcc/linux-x86/arm/arm-eabi-6.0/bin
 endif
 
 
