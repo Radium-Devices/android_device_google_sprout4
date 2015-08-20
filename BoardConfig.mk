@@ -17,12 +17,7 @@
 # inherit from common sprout repo
 -include device/google/sprout-common/BoardConfigCommon.mk
 
-ifeq ($(RADIUMBOT),true)
-    KERNEL_TOOLCHAIN := /root/radium/prebuilts/gcc/linux-x86/arm/arm-eabi-6.0/bin
-else
-    KERNEL_TOOLCHAIN := /home/akhilnarang/radium/prebuilts/gcc/linux-x86/arm/arm-eabi-6.0/bin
-endif
-
+TARGET_GCC_VERSION_EXP := 4.9
 
 # Optimizations
 ROM_OPTIS := true
