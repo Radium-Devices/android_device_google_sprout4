@@ -21,3 +21,6 @@ LOCAL_PATH := device/google/sprout8
 TARGET_OTA_ASSERT_DEVICE := sprout,sprout8
 
 TARGET_RECOVERY_FSTAB := device/google/sprout8/rootdir/root/fstab.sprout
+
+ROM_OPTIS := true
+
